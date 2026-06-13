@@ -196,7 +196,7 @@ class ReportGenerator:
             
             # 代码上下文
             if finding.get('line_content'):
-                line_content = finding['line_content'].strip()[:80]
+                line_content = finding['line_content'].strip()
                 f.write(f"  │\n")
                 f.write(f"  │ 💻 代码片段:\n")
                 f.write(f"  │    {line_content}\n")
